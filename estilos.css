@@ -1,0 +1,54 @@
+/*Se aplica a toda la pagina "*" */
+* {
+    /*padding=relleno*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.main-image{
+    background: url("forest.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    /*va dependieno del ancho que tengas este va a hacer su minimo del alto*/
+    min-height: 100vh; /*ViewportHeight*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; /*Root EM: unidad de medida que se basa en pixeles 16px=1rem*/
+    }
+
+    .main-image h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-image h1 .strike{
+        text-decoration: line-through;
+    }
+
+    .main-image p{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .main-image .btn{
+        /*transparente jaja*/
+        background: none;
+        color:#fff;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
